@@ -6,14 +6,15 @@ class BasicForm extends React.Component {
   render() {
     return (
     <form>
+        <label htmlFor="email">Email:</label>
         <input type="text" name="email" />
-        <button type="submit" />
+        <button type="submit">Submit</button>
     </form>)
   }
 }
 
 const App = () => (
-  <div>
+  <div className="container">
     <BasicForm />
   </div>
 )
