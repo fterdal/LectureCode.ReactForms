@@ -1,7 +1,7 @@
 {
-  "name": "Mini-React",
+  "name": "React-Forms",
   "version": "1.0.0",
-  "description": "A Very Minimal React Configuration",
+  "description": "Demonstration of forms in react",
   "main": "react/index.js",
   "scripts": {
     "build-watch": "webpack -w",
