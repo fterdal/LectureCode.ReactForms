@@ -5,11 +5,15 @@ import { render } from 'react-dom'
 class BasicForm extends React.Component {
   render() {
     return (
-    <form>
-        <label htmlFor="email">Email:</label>
-        <input type="text" name="email" />
-        <button type="submit">Submit</button>
-    </form>)
+      <div>
+        <form>
+          <label htmlFor="email">Email:</label>
+          <input type="text" name="email" />
+          <button type="submit">Submit</button>
+        </form>
+        <iframe src="https://giphy.com/embed/4hdWKFCCKcsbC" />
+      </div>
+    )
   }
 }
 
