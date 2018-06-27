@@ -7,6 +7,7 @@ class BasicForm extends React.Component {
   render() {
     return (
       <div>
+        <h1>Basic Form 😕</h1>
         <form>
           <label htmlFor="email">Email:</label>
           <input type="text" name="email" />
@@ -33,6 +34,7 @@ class StatefulForm extends React.Component {
   render() {
     return (
       <div>
+        <h1>Stateful Form 😏</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="email">Email:</label>
           <input type="text" name="email" onChange={this.handleChange} />
@@ -48,7 +50,7 @@ class StatefulForm extends React.Component {
 // the input element change. This means when we change the state on the component
 // the form reacts!
 class ControlledForm extends React.Component {
-  // constructor() {
+  // constructor() { // In some cases, may need to use a constructor to set initial state and bind class methods
   //   super()
   //   this.state = { email: '' }
   //   this.handleChange = this.handleChange.bind(this)
@@ -65,6 +67,7 @@ class ControlledForm extends React.Component {
   render() {
     return (
       <div>
+        <h1>Controlled Form 😎</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="email">Email:</label>
           <input type="text" name="email" onChange={this.handleChange} value={this.state.email} />
@@ -78,9 +81,9 @@ class ControlledForm extends React.Component {
 
 const App = () => (
   <div className="container">
-    {/* <BasicForm /> */}
+    <BasicForm />
     {/* <StatefulForm /> */}
-    <ControlledForm />
+    {/* <ControlledForm /> */}
   </div>
 )
 
